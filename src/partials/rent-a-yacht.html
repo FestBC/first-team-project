@@ -1,1 +1,79 @@
-<!-- Replace me with your code. 🥺 -->
+<section class="rent-yacht-section">
+  <h2 class="rent-yacht-title">Rent a yacht now</h2>
+
+  <div class="rent-yacht-image">
+    <picture>
+      <source
+        srcset="
+          ../img/rent-a-yacht/img-desktop-1440.jpg    1x,
+          ../img/rent-a-yacht/img-desktop-1440@2x.jpg 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="
+          ../img/rent-a-yacht/img-desktop-1280.jpg    1x,
+          ../img/rent-a-yacht/img-desktop-1280@2x.jpg 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ../img/rent-a-yacht/img-tablet.jpg    1x,
+          ../img/rent-a-yacht/img-tablet@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ../img/rent-a-yacht/img-mobile.jpg    1x,
+          ../img/rent-a-yacht/img-mobile@2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+
+      <img src="../img/rent-a-yacht/img-mobile.jpg" alt="Yacht" />
+    </picture>
+  </div>
+
+  <div class="rent-yacht-content">
+    <form class="rent-yacht-form" action="">
+      <label class="yacht-form-item">
+        <input
+          class="yacht-form-input"
+          placeholder="Full Name"
+          type="text"
+          required
+        />
+      </label>
+
+      <label class="yacht-form-item">
+        <input
+          class="yacht-form-input"
+          placeholder="Email"
+          type="email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          required
+        />
+      </label>
+
+      <label class="yacht-form-item">
+        <input
+          class="yacht-form-input"
+          placeholder="Phone number"
+          type="tel"
+          pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+          required
+        />
+      </label>
+
+      <textarea
+        class="yacht-form-textarea"
+        type="submit"
+        placeholder="Comment"
+      ></textarea>
+
+      <button class="rentt-yacht-btn" type="submit">Send</button>
+    </form>
+  </div>
+</section>
