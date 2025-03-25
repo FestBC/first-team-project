@@ -1,0 +1,128 @@
+/* Загальні стилі для секції about-us */
+.about {
+    padding: 20px;
+    background-color: #fbfbfb;
+    /* Світлий фон */
+    border-radius: 24px;
+    /* Закруглені кути */
+    margin-bottom: 40px;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+/* Заголовок секції */
+.about-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #1b414b;
+    /* Темно-синій колір */
+    max-width: 295px;
+    margin-bottom: 20px;
+}
+
+/* Текст секції */
+.about-text {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #1b414b;
+    max-width: 295px;
+    margin-bottom: 20px;
+}
+
+.about-descr-text {
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: rgba(4, 3, 6, 0.4);
+    /* Напівпрозорий чорний */
+    max-width: 295px;
+}
+
+/* Зображення */
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    /* Закруглені кути */
+    object-fit: cover;
+}
+
+/* Адаптивність для планшетів */
+@media only screen and (min-width: 768px) {
+    .about {
+        padding: 32px;
+    }
+
+    .about .container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .about-title {
+        font-size: 48px;
+        max-width: 536px;
+    }
+
+    .about-text {
+        font-size: 23px;
+        max-width: 389px;
+    }
+
+    .about-descr-text {
+        font-size: 13px;
+        max-width: 385px;
+    }
+
+    .about-image {
+        max-width: 704px;
+        height: auto;
+    }
+}
+
+/* Адаптивність для десктопів */
+@media only screen and (min-width: 1280px) {
+    .about {
+        padding: 50px;
+    }
+
+    .about .container {
+        gap: 50px;
+    }
+
+    .about-title {
+        max-width: 537px;
+    }
+
+    .about-text,
+    .about-descr-text {
+        max-width: 354px;
+    }
+
+    .about-image {
+        max-width: 658px;
+        height: auto;
+    }
+}
+
+/* Адаптивність для великих екранів */
+@media only screen and (min-width: 1440px) {
+
+    .about-text,
+    .about-descr-text {
+        max-width: 404px;
+    }
+
+    .about-image {
+        max-width: 768px;
+    }
+}
