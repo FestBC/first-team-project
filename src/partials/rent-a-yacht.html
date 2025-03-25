@@ -1,1 +1,81 @@
-<!-- Replace me with your code. 🥺 -->
+<section class="rent-yacht-section" id="rent-a-yacht">
+  <div class="rent-a-yacht-container container">
+    <div class="rent-yacht-content">
+      <h2 class="rent-yacht-title">Rent a yacht now</h2>
+
+      <form class="rent-yacht-form">
+        <label class="yacht-form-label">
+          <input
+            class="yacht-form-input"
+            name="user-name"
+            placeholder="Full Name"
+            type="text"
+            pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄʼ ]+"
+            required
+          />
+        </label>
+
+        <label class="yacht-form-label">
+          <input
+            class="yacht-form-input"
+            name="user-email"
+            placeholder="Email"
+            type="email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            required
+          />
+        </label>
+
+        <label class="yacht-form-label">
+          <input
+            class="yacht-form-input"
+            name="user-phone"
+            placeholder="Phone number"
+            type="tel"
+            pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+            required
+          />
+        </label>
+
+        <label class="form-label-textarea">
+          <textarea
+            class="yacht-form-textarea"
+            name="user-comment"
+            type="submit"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+
+        <button class="rent-yacht-btn" type="submit">Send</button>
+      </form>
+    </div>
+
+    <div class="rent-yacht-image">
+      <picture>
+        <source
+          srcset="
+            /img/rent-a-yacht/img-mobile.webp 1x,
+            /img/rent-a-yacht/img-mobile@2x.webp 2x
+          " 
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            /img/rent-a-yacht/img-tablet.webp 1x,
+            /img/rent-a-yacht/img-tablet@2x.webp 2x
+          "
+          media="(max-width: 1279px)"
+        />
+        <source
+          srcset="
+            /img/rent-a-yacht/img-desktop-1280.webp 1x,
+            /img/rent-a-yacht/img-desktop-1280@2x.webp 2x
+          "
+          media="(min-width: 1280px)"
+        />
+
+        <img src="/img/rent-a-yacht/img-mobile.webp" alt="Yacht" />
+      </picture>
+    </div>
+  </div>
+</section>
