@@ -1,5 +1,5 @@
 <div class="container">
-    <section class="about-us">
+    <section class="about-us" id="about-us">
         <div class="about-us-text">
             <h2>YachtJet fleet is here to take you on the ultimate adventure</h2>
             <p class="first-p">From spacious decks to state-of-the-art technology, our yachts are designed to provide the perfect blend
@@ -10,12 +10,13 @@
          </div>
             <picture>
                 <source srcset="../img/about-us/luxury-yacht-mobile.jpg 1x, ../img/about-us/luxury-yacht-mobile@2x.jpg 2x"
-                    media="(max-width: 767px)">
+                    media="(max-width: 767px)"/>
                 <source srcset="../img/about-us/luxury-yacht-tablet.jpg 1x, ../img/about-us/luxury-yacht-tablet@2x.jpg 2x"
-                    media="(min-width: 768px)">
+                    media="(min-width: 768px) and (max-width: 1279px)"/>
                 <source srcset="../img/about-us/luxury-yacht.jpg 1x, ../img/about-us/luxury-yacht@2x.jpg 2x"
-                    media="(min-width: 1280px)">
+                    media="(min-width: 1280px)"/>
                 <img class="about-us-image" src="../img/about-us/luxury-yacht-mobile.jpg" alt="Luxury Yacht"/>
             </picture>
     </section>
 </div>
+<link rel="stylesheet" href="../css/about-us.css">
